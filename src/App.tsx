@@ -1,24 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+import {initDynamicForm} from "./services/initDynamicForm";
+import {DynamicForm} from "./components/DynamicForm";
+import sampleForm from "./constants/forms/sampleForm";
 
-function App() {
+const App = () => {
+  const formSchema = sampleForm;
+  const [formData, setFormData] = useState({});
+  const [validationSchema, setValidationSchema] = useState({});
+
+  useEffect(() => {
+    initDynamicForm(formSchema, setFormData, setValidationSchema);
+  }, []);
+
+  const onSubmit = (values: any, { setSubmitting, resetForm, setStatus }: any) => {
+    console.log(values);
+    setSubmitting(false);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h2>FORM!</h2>
+      <div>
+        <DynamicForm formData={formData} validationSchema={validationSchema} formSchema={formSchema} onSubmit={onSubmit}/>
+      </div>
     </div>
   );
 }
