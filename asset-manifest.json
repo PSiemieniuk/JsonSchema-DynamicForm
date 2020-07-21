@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/JsonSchema-DynamicForm/static/css/main.5f361e03.chunk.css",
+    "main.js": "/JsonSchema-DynamicForm/static/js/main.46c53c12.chunk.js",
+    "main.js.map": "/JsonSchema-DynamicForm/static/js/main.46c53c12.chunk.js.map",
+    "runtime-main.js": "/JsonSchema-DynamicForm/static/js/runtime-main.7550f605.js",
+    "runtime-main.js.map": "/JsonSchema-DynamicForm/static/js/runtime-main.7550f605.js.map",
+    "static/js/2.d357eae5.chunk.js": "/JsonSchema-DynamicForm/static/js/2.d357eae5.chunk.js",
+    "static/js/2.d357eae5.chunk.js.map": "/JsonSchema-DynamicForm/static/js/2.d357eae5.chunk.js.map",
+    "index.html": "/JsonSchema-DynamicForm/index.html",
+    "precache-manifest.afb78ca815e225f449679b916cd0439c.js": "/JsonSchema-DynamicForm/precache-manifest.afb78ca815e225f449679b916cd0439c.js",
+    "service-worker.js": "/JsonSchema-DynamicForm/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/JsonSchema-DynamicForm/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d357eae5.chunk.js.LICENSE.txt": "/JsonSchema-DynamicForm/static/js/2.d357eae5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7550f605.js",
+    "static/js/2.d357eae5.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.46c53c12.chunk.js"
+  ]
+}
